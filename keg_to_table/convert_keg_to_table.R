@@ -59,4 +59,4 @@ result <- result[!index_na,]
 expect_equal(length(grep("K[0-9]{5}", data)), NROW(result))
 
 
-write.csv(result, file="temp.csv")
+write.csv(result, file=paste0(filename,"_parsed.csv"))
